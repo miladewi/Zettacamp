@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(238, 235, 235, 0.808);
+    opacity: 0.9;
+    padding: 20px;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    /* float: left;
+    width: 33.3%;
+     */
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -8px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+    
+  }
+  .content {
+    background-color: white;
+    padding: 0px;
+  }
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+ .desc {
+      padding: 10px;
+  }
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: dodgerblue;
+    text-align: right;
+    position:relative;
+    left: -30px;
+  }
+  #more{
+      display: none;
+  }
+  
+  .avatar {
+    vertical-align:middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 12px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    position:relative;
+    right: -87px;
+    vertical-align:middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 0%;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 12px;
+    margin-top: 9px;
+    display: flex;
+    align-items:center;
+    
+  }
+  .username{
+      padding: 10px;
+      width: 561px;
+      height: 41px;
+      font-family: Bitter;
+      font-size: 10px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: black;
+      display: block;
+  }
+  
+  .time {
+    width: 560px;
+    height: 53px;
+    font-family: Bitter;
+    font-size: 7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #7c7b7c;
+    display:block;
+  }

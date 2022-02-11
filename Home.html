@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div main = "main">
+        <div class="row">
+            <div class="column">
+              <div class="content">
+                <img src="covid.jpg" alt="Mountains" style="width:100%">
+                <div class="desc">
+                    <h3>Kasus Covid-19 di Indonesia Tembus 300 Ribu</h3>
+                    <p style="color: rgb(177, 175, 175);">Jumat, 11 Februari 2021</p>
+                    <p>Jakarta, CNN Indonesia -- Kasus aktif virus corona (Covid-19) di Indonesia tembus 312.808 ribu usai mengalami penambahan sebanyak 24.622 pada hari ini, Jumat (11/2). Kasus aktif adalah jumlah orang yang positif Covid-19 dan masih menjalani isolasi atau mendapat perawatan di rumah sakit.
+                        <span id="dots">...</span>
+                        <span id="more">Merujuk data Satgas Penanganan Covid-19, kasus positif virus corona bertambah 40.489 pada hari ini, sehingga total menjadi 4.708.043 sejak pertama kali diumumkan pada Maret 2020 lalu.
+                            Dari total kasus positif itu, sebanyak 312.808 kasus aktif dan 4.250.277 telah sembuh. Jumlah pasien sembuh bertambah 15.767 dari hari sebelumnya. Pasien yang meninggal bertambah 100 sehingga total menjadi 144.958.
+                        </span>
+                    </p>
+                    <button onclick="share" class="btn">SHARE</button>
+                    <button onclick="myFunction()" id="myBtn" class="btn">EXPLORE</button>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                  <img src="mandalika.jpg" alt="Mountains" style="width:100%">
+                  <div class="desc">
+                    <h3>Sirkuit Mandalika Sudah Bersih, Tes MotoGP Dilanjutkan</h3>
+                    <p style="color: rgb(177, 175, 175);">Jumat, 11 Februari 2021</p>
+                    <p>
+                        <span id="dots2"></span>
+                        <span id="more2">Jakarta, CNN Indonesia -- Tes MotoGP Mandalika resmi dilanjutkan pukul 11:00 WIB atau 12:00 WITA setelah Sirkuit Mandalika dibersihkan. Pihak MotoGP telah mengibarkan green flag.
+                            Melalui akun Twitter resmi, pihak MotoGP sempat menyatakan Sirkuit Mandalika masih dibersihkan setelah trek kotor karena hujan yang turun sepanjang malam.
+                            
+                            "Pembersihan sirkuit masih dilakukan," tulis pihak MotoGP melalui Twitter.
+                            Pihak MotoGP kemudian meminta penggemar MotoGP untuk bersabar. Pihak MotoGP menyatakan akan memberitahu informasi terkini secepatnya terkait kondisi Sirkuit Mandalika.
+                            </span>
+                    </p>
+                    <button onclick="share" class="btn">SHARE</button>
+                    <button onclick="myFunction2()" id="myBtn2" class="btn">EXPLORE</button>
+                </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                    <div class="avatar">
+                        <img src="gd.jpg" alt="avatar" class="avatar">
+                        <span class="username">GDragon
+                        <div class="time">
+                            <span>2 mins.ago</span>
+                        </div>
+                        </span>
+                        
+                    </div>
+                    <img src="bigbang.jpg" alt="Mountains" style="width:100%">
+                    <div class="desc">
+                        <h3>YG Entertainment: BIGBANG Comeback dalam Waktu Dekat</h3>
+                        <p style="color: rgb(177, 175, 175);">Terjemahkan</p>
+                        <p>BIGBANG bersiap comeback dalam waktu dekat. Kali ini, hal itu dikonfirmasi YG Entertainment dengan mengatakan boyband tersebut telah menyelesaikan proses rekaman lagu.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                    <img src="pantai.jpg" alt="Mountains" style="width:100%">
+                    <div class="icon">
+                        <img src="heart.png" alt="icon" class="icon">
+                        <img src="bookmark.png" alt="icon" class="icon">
+                        <img src="marker.png" alt="icon" class="icon">
+                    </div>
+                </div>
+              </div>
+            <!-- <div class ="column" style="background-color:#bbb;">Column2</div>
+            <div class ="column" style="background-color:#ccc;">Column3</div>
+            <div class ="column" style="background-color:#ddd;">Column4</div> -->
+
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display="inline-block";
+            btnText.innerHTML = "EXPLORE"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "EXPLORE"; 
+            moreText.style.display = "inline";
+          }
+        }
+        function myFunction2() {
+          var dots = document.getElementById("dots2");
+          var moreText = document.getElementById("more2");
+          var btnText = document.getElementById("myBtn2");
+        
+          if (dots.style.display === "none") {
+            dots.style.display="inline-block";
+            btnText.innerHTML = "EXPLORE"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "EXPLORE"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+        
+
+    
+</body>
+</html>
